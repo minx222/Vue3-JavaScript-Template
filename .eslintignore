@@ -1,0 +1,9 @@
+*.sh
+node_modules/**
+*.md
+.vscode/**
+.idea
+dist/**
+.husky
+Dockerfile
+.depcheckrc
