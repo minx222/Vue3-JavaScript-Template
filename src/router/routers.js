@@ -1,14 +1,14 @@
-const modules = import.meta.globEager("./modules/**/*.js");
+const modules = import.meta.globEager('./modules/**/*.js')
 
-const routers = [];
+const routers = []
 
 Object.keys(modules).forEach((key) => {
-  const mod = modules[key];
-  let modList = [];
+  const mod = modules[key]
+  let modList = []
   for (const moduleskey in mod) {
-    modList = modList.concat(mod[moduleskey]);
+    modList = modList.concat(mod[moduleskey])
   }
-  routers.push(...modList);
-});
+  routers.push(...modList)
+})
 
-export { routers };
+export { routers }

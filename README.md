@@ -1,35 +1,32 @@
-# rent
-
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
+## 安装依赖
 
 ```sh
 yarn
 ```
 
-### Compile and Hot-Reload for Development
+### 启动
 
 ```sh
 yarn dev
 ```
 
-### Compile and Minify for Production
+### 构建
 
 ```sh
 yarn build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+## husky构建
 
-```sh
-yarn lint
 ```
+yarn prepare
+```
+
+```
+yarn husky add .husky/pre-commit "echo npx --no-install lint-staged"
+```
+
+```
+yarn husky add .husky/commit-msg "echo npx --no-install commitlint --edit ${1}"
+```
+

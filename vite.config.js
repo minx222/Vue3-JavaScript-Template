@@ -13,11 +13,13 @@ export default defineConfig({
     // 组件导入
     Components({
       dirs: ["src/components"],
+      dts: "",
       resolvers: [AntDesignVueResolver()],
     }),
     // 模块注入
     AutoImport({
       imports: ["vue", "vue-router"],
+      dts: "",
       dirs: ["./src/api/**", "./src/stores/modules/**"],
     }),
   ],

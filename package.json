@@ -7,10 +7,11 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint:eslint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.cts,.mts --fix",
-    "lint:prettier": "prettier --write  \"src/**/*.{js,json,css,less,scss,vue,html,md}\"",
+    "lint:prettier": "prettier --write  \"./**/*.{js,json,css,less,scss,vue,html,md}\"",
     "prepare": "husky install"
   },
   "dependencies": {
+    "ant-design-vue": "^3.2.15",
     "pinia": "^2.0.28",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
@@ -30,6 +31,7 @@
     "postcss": "^8.4.20",
     "postcss-pxtorem": "^6.0.0",
     "prettier": "^2.7.1",
+    "qs": "^6.11.0",
     "sass": "^1.57.1",
     "sass-loader": "^13.2.0",
     "tailwindcss": "^2.2.16",
