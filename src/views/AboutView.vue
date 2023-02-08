@@ -5,9 +5,7 @@
 </template>
 
 <style>
-@media (min-width: 1024px) {
-  .about {
-    @apply flex min-h-screen items-center;
-  }
+.about {
+  @apply flex min-h-screen items-center;
 }
 </style>
