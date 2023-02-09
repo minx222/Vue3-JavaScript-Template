@@ -1,0 +1,11 @@
+*.sh
+node_modules/**
+*.md
+.vscode/**
+.idea
+dist/**
+.husky
+Dockerfile
+.depcheckrc
+**.js
+!src/**/*.js

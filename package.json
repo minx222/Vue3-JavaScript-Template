@@ -1,0 +1,42 @@
+{
+  "name": "rent",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint:eslint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.cts,.mts --fix",
+    "lint:prettier": "prettier --write  \"./**/*.{js,json,css,less,scss,vue,html,md}\"",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "ant-design-vue": "^3.2.15",
+    "pinia": "^2.0.28",
+    "vue": "^3.2.45",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "@rushstack/eslint-patch": "^1.1.4",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.22.0",
+    "eslint-plugin-vue": "^9.3.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.1",
+    "pinia-plugin-persist": "^1.0.0",
+    "postcss": "^8.4.20",
+    "postcss-pxtorem": "^6.0.0",
+    "prettier": "^2.7.1",
+    "qs": "^6.11.0",
+    "sass": "^1.57.1",
+    "sass-loader": "^13.2.0",
+    "tailwindcss": "^2.2.16",
+    "unplugin-auto-import": "^0.12.1",
+    "unplugin-vue-components": "^0.22.12",
+    "vite": "^4.0.0"
+  }
+}
