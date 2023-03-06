@@ -1,7 +1,3 @@
-<script setup>
-import TheWelcome from '../components/TheWelcome.vue'
-</script>
-
 <template>
   <div>深夜的酒不比清晨的豆浆</div>
 </template>
