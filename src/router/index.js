@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import { setupAfterEach, setupBeforeEach } from './each'
 import { routers } from './routers'
 
 const router = createRouter({
@@ -11,6 +12,8 @@ const router = createRouter({
  * @param {App} app
  */
 export const setupRouter = (app) => {
+  setupBeforeEach(router)
+  setupAfterEach(router)
   app.use(router)
 }
 

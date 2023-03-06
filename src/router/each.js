@@ -1,3 +1,4 @@
+const white = ['/home', '/login/login', '/login/register', '/position']
 export const setupBeforeEach = (router) => {
   router.beforeEach(async (to, from, next) => {
     next()

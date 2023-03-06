@@ -5,7 +5,11 @@
 </template>
 
 <style>
-.about {
-  @apply flex min-h-screen items-center;
+@media (min-width: 1024px) {
+  .about {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
 }
 </style>

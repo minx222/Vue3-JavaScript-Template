@@ -19,13 +19,22 @@ export default defineConfig({
     // 模块注入
     AutoImport({
       imports: ['vue', 'vue-router'],
-      dts: '',
       dirs: ['./src/api/**', './src/stores/modules/**']
-    })
+    }),
   ],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
+    }
+  },
+  server: {
+    port: 4000,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8025',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, '')
+      }
     }
   }
 })
