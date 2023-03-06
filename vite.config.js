@@ -19,6 +19,11 @@ export default defineConfig({
     // 模块注入
     AutoImport({
       imports: ['vue', 'vue-router'],
+      eslintrc: {
+        enabled: true, // Default `false`
+        filepath: './.eslintrc-auto-import.json', // Default `./.eslintrc-auto-import.json`
+        globalsPropValue: true, // Default `true`, (true | false | 'readonly' | 'readable' | 'writable' | 'writeable')
+      },
       dirs: ['./src/api/**', './src/stores/modules/**']
     }),
   ],

@@ -9,6 +9,11 @@ module.exports = {
     '@vue/eslint-config-prettier/skip-formatting',
     './.eslintrc-auto-import.json'
   ],
+  env: {
+    es6: true,
+    browser: true,
+    node: true
+  },
   parserOptions: {
     ecmaVersion: 'latest'
   },

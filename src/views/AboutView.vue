@@ -1,15 +1,12 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <div>about</div>
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+<style lang="scss" scoped>
+div {
+  @apply text-center text-gray-50 pb-6 text-2xl;
+  background-image: -webkit-linear-gradient(left, #b5b2b2, #ff9800, #fdd835);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 </style>
